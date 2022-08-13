@@ -2085,3 +2085,4 @@ AttributeError: 'str' object has no attribute 'get'
 [2022-08-13 23:06:43,380] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
 [2022-08-13 23:06:45,577] [log.py:241] [log:log_response] [WARNING]- Not Found: /
 [2022-08-13 23:06:45,583] [basehttp.py:187] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2064
+[2022-08-13 23:28:33,162] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- E:\Repository\wechatsevers\wxcloudrun\settings.py changed, reloading.
