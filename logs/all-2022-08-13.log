@@ -2008,3 +2008,80 @@ django.db.utils.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
 [2022-08-13 17:24:37,764] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"clear"}'
 [2022-08-13 17:24:37,771] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 0}
 [2022-08-13 17:24:37,772] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 22
+[2022-08-13 22:25:07,398] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-08-13 22:25:15,703] [log.py:241] [log:log_response] [WARNING]- Not Found: /
+[2022-08-13 22:25:15,707] [basehttp.py:187] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2073
+[2022-08-13 22:25:15,792] [log.py:241] [log:log_response] [WARNING]- Not Found: /favicon.ico
+[2022-08-13 22:25:15,795] [basehttp.py:187] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 2124
+[2022-08-13 22:31:28,715] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- E:\Repository\wechatsevers\wxcloudrun\urls.py changed, reloading.
+[2022-08-13 22:31:29,463] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-08-13 22:31:33,928] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: autoreply() takes 1 positional argument but 2 were given
+[2022-08-13 22:31:33,931] [basehttp.py:187] [basehttp:log_message] [ERROR]- "GET / HTTP/1.1" 500 66202
+[2022-08-13 22:33:34,220] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- E:\Repository\wechatsevers\wxcloudrun\urls.py changed, reloading.
+[2022-08-13 22:33:34,989] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-08-13 22:33:49,697] [log.py:241] [log:log_response] [WARNING]- Not Found: /
+[2022-08-13 22:33:49,698] [basehttp.py:187] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2058
+[2022-08-13 22:40:01,333] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- E:\Repository\wechatsevers\wxcloudrun\urls.py changed, reloading.
+[2022-08-13 22:40:02,084] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-08-13 22:40:07,187] [log.py:241] [log:log_response] [WARNING]- Not Found: /
+[2022-08-13 22:40:07,191] [basehttp.py:187] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2064
+[2022-08-13 22:57:43,433] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- E:\Repository\wechatsevers\wxcloudrun\urls.py changed, reloading.
+[2022-08-13 22:57:44,342] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-08-13 22:58:09,555] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- E:\Repository\wechatsevers\wxcloudrun\urls.py changed, reloading.
+[2022-08-13 22:58:10,276] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-08-13 22:59:17,791] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- E:\Repository\wechatsevers\wxcloudrun\urls.py changed, reloading.
+[2022-08-13 22:59:18,630] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-08-13 22:59:23,194] [log.py:241] [log:log_response] [WARNING]- Not Found: /
+[2022-08-13 22:59:23,196] [basehttp.py:187] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2066
+[2022-08-13 23:00:33,465] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- E:\Repository\wechatsevers\wxcloudrun\urls.py changed, reloading.
+[2022-08-13 23:00:34,239] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-08-13 23:00:36,926] [log.py:241] [log:log_response] [WARNING]- Not Found: /
+[2022-08-13 23:00:36,927] [basehttp.py:187] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2058
+[2022-08-13 23:00:50,602] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- E:\Repository\wechatsevers\wxcloudrun\urls.py changed, reloading.
+[2022-08-13 23:00:51,452] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-08-13 23:00:53,599] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\clickjacking.py", line 27, in process_response
+    if response.get("X-Frame-Options") is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-08-13 23:00:53,605] [basehttp.py:187] [basehttp:log_message] [ERROR]- "GET / HTTP/1.1" 500 69555
+[2022-08-13 23:04:00,055] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- E:\Repository\wechatsevers\wxcloudrun\settings.py changed, reloading.
+[2022-08-13 23:04:00,809] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-08-13 23:04:06,792] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\clickjacking.py", line 27, in process_response
+    if response.get("X-Frame-Options") is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-08-13 23:04:06,796] [basehttp.py:187] [basehttp:log_message] [ERROR]- "GET / HTTP/1.1" 500 69555
+[2022-08-13 23:04:14,554] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\clickjacking.py", line 27, in process_response
+    if response.get("X-Frame-Options") is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-08-13 23:04:14,556] [basehttp.py:187] [basehttp:log_message] [ERROR]- "GET / HTTP/1.1" 500 69692
+[2022-08-13 23:04:25,581] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- E:\Repository\wechatsevers\wxcloudrun\urls.py changed, reloading.
+[2022-08-13 23:04:26,314] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-08-13 23:04:28,297] [log.py:241] [log:log_response] [WARNING]- Not Found: /
+[2022-08-13 23:04:28,299] [basehttp.py:187] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2058
+[2022-08-13 23:06:42,603] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- E:\Repository\wechatsevers\wxcloudrun\urls.py changed, reloading.
+[2022-08-13 23:06:43,380] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-08-13 23:06:45,577] [log.py:241] [log:log_response] [WARNING]- Not Found: /
+[2022-08-13 23:06:45,583] [basehttp.py:187] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2064

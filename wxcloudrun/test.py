@@ -43,14 +43,14 @@ def TbkTpwdCreate(title,url): #有淘宝客对应优惠券的商品生成短链�
     except Exception as e:
         print(e)
 
-def TbkRetuMsg(salename):
+if __name__ == '__main__':
 	#给出要查询的商品名字
     response = TbkDgMaterialOptional(salename)
     map_data = response['tbk_dg_material_optional_response']['result_list']['map_data'][0]
     if map_data.get('coupon_share_url') is None:
-        message = '没有发现优惠券'
-        print(message)
+        print('没有发现优惠券')
     else:
+
         title = map_data.get('title')  #得到商品的名称
         itemid = map_data.get('item_id')  #得到商品的id
         activityid = map_data.get('coupon_id')  #得到优惠券的id
@@ -61,14 +61,10 @@ def TbkRetuMsg(salename):
         price = priceresponse['tbk_coupon_get_response']['data']
         discount = price.get('coupon_amount')#商品的优惠券额度
         difference = str(float(Decimal(onsale) - Decimal(discount)))  #优惠后的价格
+
         Shortlink = TbkTpwdCreate(title,share_url)
         link = Shortlink['tbk_tpwd_create_response']['data']['model'] #得到编码+短链接+标题
         link = link.split(' ')[1]#过滤出短链接
         message = '''/:gift{name}\n/:rose【在售价】{orderprice}元\n/:heart【券后价】{conponprice}元\n/:cake 【抢购链接】{link_short}\n-----------------\n复制这条信息\n{token}打开【手机淘宝】，即可查看\n------------------\n
             '''.format(name=title, orderprice=onsale, conponprice=difference, token="", link_short=link)
         print(message)
-    try:
-        return message
-    except Exception as e:
-        print(e)
-
