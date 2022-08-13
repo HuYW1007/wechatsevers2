@@ -1,0 +1,2010 @@
+[2022-08-13 10:25:14,683] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-08-13 14:22:18,420] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- E:\Repository\wechatsevers\wxcloudrun\urls.py changed, reloading.
+[2022-08-13 14:22:19,795] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-08-13 14:24:54,815] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-08-13 15:20:57,801] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-08-13 15:30:35,377] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- E:\Repository\wechatsevers\wxcloudrun\settings.py changed, reloading.
+[2022-08-13 15:30:36,275] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-08-13 15:32:28,375] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- E:\Repository\wechatsevers\wxcloudrun\settings.py changed, reloading.
+[2022-08-13 15:32:29,084] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-08-13 16:14:00,046] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-08-13 16:47:16,000] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-08-13 16:49:34,293] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-08-13 16:50:30,069] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- E:\Repository\wechatsevers\wxcloudrun\settings.py changed, reloading.
+[2022-08-13 16:50:30,814] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-08-13 16:53:21,505] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- E:\Repository\wechatsevers\wxcloudrun\settings.py changed, reloading.
+[2022-08-13 16:53:22,289] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-08-13 16:54:26,479] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- E:\Repository\wechatsevers\wxcloudrun\settings.py changed, reloading.
+[2022-08-13 16:54:27,642] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-08-13 16:54:46,298] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 10137
+[2022-08-13 16:54:47,452] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/count
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 31, in counter
+    rsp = get_count()
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 47, in get_count
+    data = Counters.objects.get(id=1)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 492, in get
+    num = len(clone)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+[2022-08-13 16:54:47,480] [basehttp.py:187] [basehttp:log_message] [ERROR]- "GET /api/count HTTP/1.1" 500 203786
+[2022-08-13 16:54:49,121] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 16:54:49,195] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/count
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 33, in counter
+    rsp = update_count(request)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 73, in update_count
+    data = Counters.objects.get(id=1)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 492, in get
+    num = len(clone)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+[2022-08-13 16:54:49,206] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/count HTTP/1.1" 500 205127
+[2022-08-13 16:54:49,743] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 16:54:49,806] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/count
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 33, in counter
+    rsp = update_count(request)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 73, in update_count
+    data = Counters.objects.get(id=1)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 492, in get
+    num = len(clone)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+[2022-08-13 16:54:49,816] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/count HTTP/1.1" 500 205127
+[2022-08-13 16:54:50,042] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 16:54:50,110] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/count
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 33, in counter
+    rsp = update_count(request)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 73, in update_count
+    data = Counters.objects.get(id=1)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 492, in get
+    num = len(clone)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+[2022-08-13 16:54:50,120] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/count HTTP/1.1" 500 205127
+[2022-08-13 16:54:50,504] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 16:54:50,569] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/count
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 33, in counter
+    rsp = update_count(request)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 73, in update_count
+    data = Counters.objects.get(id=1)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 492, in get
+    num = len(clone)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+[2022-08-13 16:54:50,579] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/count HTTP/1.1" 500 205127
+[2022-08-13 16:54:51,444] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 16:54:51,511] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/count
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 33, in counter
+    rsp = update_count(request)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 73, in update_count
+    data = Counters.objects.get(id=1)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 492, in get
+    num = len(clone)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+[2022-08-13 16:54:51,521] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/count HTTP/1.1" 500 205127
+[2022-08-13 16:54:51,700] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 16:54:51,764] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/count
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 33, in counter
+    rsp = update_count(request)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 73, in update_count
+    data = Counters.objects.get(id=1)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 492, in get
+    num = len(clone)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+[2022-08-13 16:54:51,775] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/count HTTP/1.1" 500 205127
+[2022-08-13 16:54:52,143] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 16:54:52,208] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/count
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 33, in counter
+    rsp = update_count(request)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 73, in update_count
+    data = Counters.objects.get(id=1)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 492, in get
+    num = len(clone)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+[2022-08-13 16:54:52,219] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/count HTTP/1.1" 500 205127
+[2022-08-13 16:54:52,452] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 16:54:52,519] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/count
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 33, in counter
+    rsp = update_count(request)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 73, in update_count
+    data = Counters.objects.get(id=1)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 492, in get
+    num = len(clone)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+[2022-08-13 16:54:52,529] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/count HTTP/1.1" 500 205127
+[2022-08-13 16:54:53,139] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"clear"}'
+[2022-08-13 16:54:53,203] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/count
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 33, in counter
+    rsp = update_count(request)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 83, in update_count
+    data = Counters.objects.get(id=1)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 492, in get
+    num = len(clone)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+[2022-08-13 16:54:53,214] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/count HTTP/1.1" 500 205185
+[2022-08-13 16:54:53,698] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"clear"}'
+[2022-08-13 16:54:53,761] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/count
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 33, in counter
+    rsp = update_count(request)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 83, in update_count
+    data = Counters.objects.get(id=1)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 492, in get
+    num = len(clone)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+[2022-08-13 16:54:53,771] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/count HTTP/1.1" 500 205185
+[2022-08-13 16:54:53,911] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"clear"}'
+[2022-08-13 16:54:53,978] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/count
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 33, in counter
+    rsp = update_count(request)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 83, in update_count
+    data = Counters.objects.get(id=1)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 492, in get
+    num = len(clone)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+[2022-08-13 16:54:53,989] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/count HTTP/1.1" 500 205185
+[2022-08-13 16:54:54,328] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 16:54:54,389] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/count
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 33, in counter
+    rsp = update_count(request)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 73, in update_count
+    data = Counters.objects.get(id=1)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 492, in get
+    num = len(clone)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+[2022-08-13 16:54:54,399] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/count HTTP/1.1" 500 205127
+[2022-08-13 16:54:54,984] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 16:54:55,050] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/count
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 33, in counter
+    rsp = update_count(request)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 73, in update_count
+    data = Counters.objects.get(id=1)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 492, in get
+    num = len(clone)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+[2022-08-13 16:54:55,060] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/count HTTP/1.1" 500 205127
+[2022-08-13 16:54:55,178] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 16:54:55,243] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/count
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 33, in counter
+    rsp = update_count(request)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 73, in update_count
+    data = Counters.objects.get(id=1)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 492, in get
+    num = len(clone)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+[2022-08-13 16:54:55,252] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/count HTTP/1.1" 500 205127
+[2022-08-13 16:54:59,782] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"clear"}'
+[2022-08-13 16:54:59,845] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/count
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 33, in counter
+    rsp = update_count(request)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 83, in update_count
+    data = Counters.objects.get(id=1)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 492, in get
+    num = len(clone)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+[2022-08-13 16:54:59,856] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/count HTTP/1.1" 500 205185
+[2022-08-13 16:55:00,316] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"clear"}'
+[2022-08-13 16:55:00,380] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/count
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 33, in counter
+    rsp = update_count(request)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 83, in update_count
+    data = Counters.objects.get(id=1)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 492, in get
+    num = len(clone)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+[2022-08-13 16:55:00,390] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/count HTTP/1.1" 500 205185
+[2022-08-13 16:55:00,508] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"clear"}'
+[2022-08-13 16:55:00,573] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/count
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 33, in counter
+    rsp = update_count(request)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 83, in update_count
+    data = Counters.objects.get(id=1)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 492, in get
+    num = len(clone)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+[2022-08-13 16:55:00,582] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/count HTTP/1.1" 500 205185
+[2022-08-13 16:55:00,940] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"clear"}'
+[2022-08-13 16:55:01,003] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/count
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 33, in counter
+    rsp = update_count(request)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 83, in update_count
+    data = Counters.objects.get(id=1)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 492, in get
+    num = len(clone)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+[2022-08-13 16:55:01,013] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/count HTTP/1.1" 500 205185
+[2022-08-13 17:20:44,808] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-08-13 17:21:43,550] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 10137
+[2022-08-13 17:21:45,261] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/count
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 31, in counter
+    rsp = get_count()
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 47, in get_count
+    data = Counters.objects.get(id=1)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 492, in get
+    num = len(clone)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+[2022-08-13 17:21:45,274] [basehttp.py:187] [basehttp:log_message] [ERROR]- "GET /api/count HTTP/1.1" 500 203786
+[2022-08-13 17:21:46,069] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:21:46,133] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/count
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 33, in counter
+    rsp = update_count(request)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 73, in update_count
+    data = Counters.objects.get(id=1)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 492, in get
+    num = len(clone)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+[2022-08-13 17:21:46,144] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/count HTTP/1.1" 500 205127
+[2022-08-13 17:21:46,320] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:21:46,384] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/count
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 33, in counter
+    rsp = update_count(request)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 73, in update_count
+    data = Counters.objects.get(id=1)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 492, in get
+    num = len(clone)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+[2022-08-13 17:21:46,394] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/count HTTP/1.1" 500 205127
+[2022-08-13 17:21:46,490] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:21:46,553] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/count
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 33, in counter
+    rsp = update_count(request)
+  File "E:\Repository\wechatsevers\wxcloudrun\views.py", line 73, in update_count
+    data = Counters.objects.get(id=1)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 492, in get
+    num = len(clone)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\yw hu\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'mysql.counters' doesn't exist")
+[2022-08-13 17:21:46,562] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/count HTTP/1.1" 500 205127
+[2022-08-13 17:22:26,337] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-08-13 17:22:31,042] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 10137
+[2022-08-13 17:22:31,286] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 0}
+[2022-08-13 17:22:31,287] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /api/count HTTP/1.1" 200 22
+[2022-08-13 17:22:34,846] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:34,855] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 1}
+[2022-08-13 17:22:34,856] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 22
+[2022-08-13 17:22:35,024] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:35,031] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 2}
+[2022-08-13 17:22:35,032] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 22
+[2022-08-13 17:22:35,280] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:35,286] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 3}
+[2022-08-13 17:22:35,288] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 22
+[2022-08-13 17:22:35,463] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:35,469] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 4}
+[2022-08-13 17:22:35,471] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 22
+[2022-08-13 17:22:35,658] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:35,665] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 5}
+[2022-08-13 17:22:35,667] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 22
+[2022-08-13 17:22:35,858] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:35,865] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 6}
+[2022-08-13 17:22:35,867] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 22
+[2022-08-13 17:22:36,090] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:36,097] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 7}
+[2022-08-13 17:22:36,098] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 22
+[2022-08-13 17:22:36,323] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:36,329] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 8}
+[2022-08-13 17:22:36,330] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 22
+[2022-08-13 17:22:36,538] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:36,561] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 9}
+[2022-08-13 17:22:36,562] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 22
+[2022-08-13 17:22:36,740] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:36,746] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 10}
+[2022-08-13 17:22:36,747] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 23
+[2022-08-13 17:22:36,962] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:36,969] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 11}
+[2022-08-13 17:22:36,970] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 23
+[2022-08-13 17:22:37,218] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:37,224] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 12}
+[2022-08-13 17:22:37,225] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 23
+[2022-08-13 17:22:37,477] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:37,484] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 13}
+[2022-08-13 17:22:37,485] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 23
+[2022-08-13 17:22:37,734] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:37,741] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 14}
+[2022-08-13 17:22:37,742] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 23
+[2022-08-13 17:22:37,985] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:37,993] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 15}
+[2022-08-13 17:22:37,994] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 23
+[2022-08-13 17:22:38,206] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:38,212] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 16}
+[2022-08-13 17:22:38,213] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 23
+[2022-08-13 17:22:38,414] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:38,420] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 17}
+[2022-08-13 17:22:38,421] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 23
+[2022-08-13 17:22:38,609] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:38,615] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 18}
+[2022-08-13 17:22:38,616] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 23
+[2022-08-13 17:22:38,800] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:38,808] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 19}
+[2022-08-13 17:22:38,809] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 23
+[2022-08-13 17:22:39,004] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:39,010] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 20}
+[2022-08-13 17:22:39,011] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 23
+[2022-08-13 17:22:39,192] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:39,197] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 21}
+[2022-08-13 17:22:39,198] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 23
+[2022-08-13 17:22:39,396] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:39,403] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 22}
+[2022-08-13 17:22:39,404] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 23
+[2022-08-13 17:22:39,608] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:39,614] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 23}
+[2022-08-13 17:22:39,616] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 23
+[2022-08-13 17:22:39,810] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:39,826] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 24}
+[2022-08-13 17:22:39,827] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 23
+[2022-08-13 17:22:40,036] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:40,042] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 25}
+[2022-08-13 17:22:40,043] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 23
+[2022-08-13 17:22:40,232] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:40,238] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 26}
+[2022-08-13 17:22:40,239] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 23
+[2022-08-13 17:22:40,455] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:40,462] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 27}
+[2022-08-13 17:22:40,464] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 23
+[2022-08-13 17:22:40,670] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:40,676] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 28}
+[2022-08-13 17:22:40,677] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 23
+[2022-08-13 17:22:40,896] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:40,903] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 29}
+[2022-08-13 17:22:40,903] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 23
+[2022-08-13 17:22:41,747] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"clear"}'
+[2022-08-13 17:22:41,754] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 0}
+[2022-08-13 17:22:41,755] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 22
+[2022-08-13 17:22:42,506] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:42,513] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 1}
+[2022-08-13 17:22:42,514] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 22
+[2022-08-13 17:22:43,052] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:43,059] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 2}
+[2022-08-13 17:22:43,060] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 22
+[2022-08-13 17:22:43,253] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:43,258] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 3}
+[2022-08-13 17:22:43,259] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 22
+[2022-08-13 17:22:43,458] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:43,465] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 4}
+[2022-08-13 17:22:43,466] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 22
+[2022-08-13 17:22:43,658] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:43,664] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 5}
+[2022-08-13 17:22:43,665] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 22
+[2022-08-13 17:22:43,868] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:43,875] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 6}
+[2022-08-13 17:22:43,876] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 22
+[2022-08-13 17:22:44,075] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:44,103] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 7}
+[2022-08-13 17:22:44,104] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 22
+[2022-08-13 17:22:44,272] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:44,296] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 8}
+[2022-08-13 17:22:44,297] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 22
+[2022-08-13 17:22:44,484] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:44,491] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 9}
+[2022-08-13 17:22:44,492] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 22
+[2022-08-13 17:22:44,734] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:44,740] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 10}
+[2022-08-13 17:22:44,741] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 23
+[2022-08-13 17:22:44,942] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:44,949] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 11}
+[2022-08-13 17:22:44,950] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 23
+[2022-08-13 17:22:45,160] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:45,166] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 12}
+[2022-08-13 17:22:45,168] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 23
+[2022-08-13 17:22:45,409] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:22:45,429] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 13}
+[2022-08-13 17:22:45,430] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 23
+[2022-08-13 17:22:45,996] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"clear"}'
+[2022-08-13 17:22:46,002] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 0}
+[2022-08-13 17:22:46,003] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 22
+[2022-08-13 17:24:35,428] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:24:35,436] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 1}
+[2022-08-13 17:24:35,437] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 22
+[2022-08-13 17:24:35,843] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:24:35,849] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 2}
+[2022-08-13 17:24:35,851] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 22
+[2022-08-13 17:24:36,088] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:24:36,094] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 3}
+[2022-08-13 17:24:36,096] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 22
+[2022-08-13 17:24:36,351] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"inc"}'
+[2022-08-13 17:24:36,359] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 4}
+[2022-08-13 17:24:36,360] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 22
+[2022-08-13 17:24:37,764] [views.py:62] [views:update_count] [INFO]- update_count req: b'{"action":"clear"}'
+[2022-08-13 17:24:37,771] [views.py:37] [views:counter] [INFO]- response result: {"code": 0, "data": 0}
+[2022-08-13 17:24:37,772] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/count HTTP/1.1" 200 22
